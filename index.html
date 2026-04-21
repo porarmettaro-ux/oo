@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <title>แนะนำตัว</title>
+    <style>
+        body {
+            font-family: 'Itim', cursive;
+            background: linear-gradient(135deg, #74b9ff, #a29bfe);
+            color: #2d3436;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            background: linear-gradient(45deg, #00b894, #00cec9);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 20px rgba(0, 184, 148, 0.3);
+        }
+        .section {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .profile-img {
+            display: block;
+            margin: 0 auto;
+            border: 5px solid #fff;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .profile-img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+        .hobby-img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 15px;
+            width: 300px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        iframe {
+            display: block;
+            margin: 20px auto;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+        }
+        a {
+            color: #0984e3;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #74b9ff;
+        }
+        h1 {
+            background: rgba(255, 255, 255, 0.9);
+            color: #2d3436;
+            padding: 10px 15px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: fit-content;
+            margin: 0;
+        }
+        h2 {
+            background: rgba(255, 255, 255, 0.8);
+            color: #2d3436;
+            padding: 8px 12px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: fit-content;
+            margin: 0 0 10px 0;
+            border-bottom: 2px solid #00b894;
+        }
+        .profile-img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+        .hobby-img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 15px;
+            width: 300px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        iframe {
+            display: block;
+            margin: 20px auto;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+        }
+        a {
+            color: #0984e3;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #74b9ff;
+        }
+        h1 {
+            background: rgba(255, 255, 255, 0.9);
+            color: #2d3436;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            margin: 0;
+        }
+        h2 {
+            background: rgba(255, 255, 255, 0.8);
+            color: #2d3436;
+            padding: 10px 15px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            margin: 0 0 10px 0;
+            border-bottom: 2px solid #00b894;
+            
+        }
+        .i1 {
+            display: block;
+            margin: 20px auto;
+            border: 5px solid #fff;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="a1"><h1>แนะนำตัว 
+
+    </h1></div>
+    <div class="a2"><h2>ชื่อ: ปรเมศวร์ ดวงดอก (เสือ)</h2></div>
+    
+    <p>
+        <b>อายุ:</b>24ปี<br>
+        <b>เกิดวันที่:</b>16 พฤษภาคม 2545<br>
+        <b>ที่อยู่:</b> 123 หมู่บ้านสุขสันต์ ตำบลสุขใจ อำเภอเมือง จังหวัดสุขสบาย<br>
+        <b>อาชีพ:</b> บาริสต้า<br>  
+
+        <!-- ใช้แอตทริบิวต์ width เพื่อกำหนดขนาดรูปภาพแทนการใช้ CSS -->
+
+<a href="https://www.ikea.com/th/th/cat/lower-price/?gclsrc=aw.ds&gad_source=1&gad_campaignid=22204880779&gclid=CjwKCAjwwJzPBhBREiwAJfHRnfnTEcNMHDeTEDKLwLQ1xISgKWIWARrIh5a_Z3quVhngVKsuaHfVPBoC-jEQAvD_BwE">
+    <img src="received_343174091674923.jpg" alt="รูปโปรไฟล์ของปรเมศวร์" class="i1">
+</a>
+    <b>งานอดิเรก:</b> ฟังเพลง,ถ่ายรูป,เล่นเกม<br>
+    <b>ความสามารถพิเศษ:</b> ทำกาแฟลาเต้อาร์ต, เล่นกีตาร์, วาดรูป<br>
+    <b>คติประจำใจ:</b> "ชีวิตคือการเดินทางที่เต็มไปด้วยการเรียนรู้และการเติบโต" <br>
+</p>
+<img src="images.jpg" alt="รูปงานอดิเรก" width="200">
+<h2>เพลงที่ชอบ</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Gy-MZjiFv2M?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h2>ช่องทางการติดต่อ</h2>
+<ul>
+    <li><b>facebook:</b> <a href="https://www.facebook.com/share/1JWz9swces/">taro poramet</a></li>
+    <li><b>IG:</b> <a href="https://www.instagram.com/ookami_3313?igsh=enphMGxnNGM2MHN1">ookami3313</a></li>
+    <li><b>เบอร์โทร:</b> "02-123-4567"</li>
+    <li><b>line:</b> "taro20500p"</li>
+</ul>
+   
+    
+</body>
+</html>
